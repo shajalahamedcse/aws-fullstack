@@ -14,7 +14,7 @@ class Reverser extends Component {
     }
 
     handleSubmit=()=>{
-        axios.post(`/reverser`, this.state)
+        axios.post(`http://65.0.26.18:8080/reverser`, this.state)
         .then(res => {
           this.setState({reverseNum:res.data.num})
         })

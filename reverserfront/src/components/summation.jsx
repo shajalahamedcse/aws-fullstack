@@ -14,7 +14,7 @@ class Summation extends Component {
     }
 
     handleSubmit=()=>{
-        axios.post(`/summation`, this.state)
+        axios.post(`http://65.0.26.18:8080/summation`, this.state)
         .then(res => {
           this.setState({sumNum:res.data.sum})
         })
